@@ -8,6 +8,7 @@ Of course, the main part of this build is the router which is the GL iNet AR300M
 
 ## The firmware
 I tried compiling the "Sweet Pineapple Builder" by Samy Youni but that did not seem to work for me. I found that xchwarze on github had a cloning method that worked much better. I've put the compiled binary in this git [Click Here](https://github.com/0x29aNull/WiFi-Pineapple/raw/main/gl-ar300m-universal-sysupgrade.bin) to download the WiFi Pineapple Tetra firmware.
+NOTE: This firmware is ONLY for the GL iNet AR300M16 - It will soft brick the AR300 and potentially the AR300M.
 
 ## The install
 This is a fairly easy and straight forward setup. Plug in and power up your AR300M-16 and wait for it to boot. After a few minutes look for the "GL-INET-300M" (or similar) network and connect. Open a web browser and navigate to http://192.168.8.1 to setup the router. The router's setup will ask you to enter a new root password but this password is just temporary. After you get to the main page of the router open your terminal of choice and SSH into the router.
