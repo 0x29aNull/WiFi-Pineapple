@@ -7,7 +7,7 @@ Since Hak5 came out with their WiFi Pineapple I've always wanted one but never r
 Of course, the main part of this build is the router which is the GL iNet AR300M-16 "Shadow" which can be found on Amazon for around $30. [Click here](https://a.co/d/4ouoOg0) to go to the Amazon listing. The AR300M has a MIPS 24kc CPU which is the same CPU as the WiFi Pineapple.
 
 ## The firmware
-I tried compiling the "Sweet Pineapple Builder" by Samy Youni but that did not seem to work for me. I found that xchwarze on github had a cloning method that worked much better. I've put the compiled binary in this git [Click Here](https://github.com/0x29aNull/WiFi-Pineapple/raw/main/gl-ar300m-universal-sysupgrade.bin) to download the WiFi Pineapple Tetra firmware.
+I tried compiling the "Sweet Pineapple Builder" by Samy Youni but that did not seem to work for me. I found that xchwarze on github had a cloning method that worked much better. I've put the compiled binary in this git [Click Here](https://github.com/0x29aNull/WiFi-Pineapple/raw/main/gl-ar300m-universal-sysupgrade.bin) to download the WiFi Pineapple Tetra firmware.   
 NOTE: This firmware is ONLY for the GL iNet AR300M16 - It will soft brick the AR300 and potentially the AR300M.
 
 ## The install
@@ -42,6 +42,19 @@ Depending on your OS you may be able to navigate to the WiFi Pineapple managemen
   c. Default Gateway: 172.16.42.1  
 7. Click "OK"
 8. Press the refresh button in your browser to load the management page.
+
+### macOS
+1. Open Settings
+2. Click on Network Settings
+3. Click on your interface
+4. Select the "Details" button
+5. Go to the TCP/IP tab
+6. Select the Configure IPv4 dropdown menu & select "Manually"
+7. IP Address: 172.16.42.69
+8. Netmask: 255.255.0.0
+9. Router/Gateway: 172.16.42.1
+
+### Linux
 
 The page will ask you to hold the side button for 2 or more seconds to enable management via WiFi. At this point I would suggest that you get a usb hub, a minimum 16gb USB drive and an additional USB WiFi Dongle and plug both the drive and the WiFi Dongle in to the hub and the hub into the USB port on the side of the router. 
 
