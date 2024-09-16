@@ -50,7 +50,10 @@ The router doesn't have much room for anything beyond the bare WiFi Pineapple fi
 ### Linux
 1. Open terminal
 2. Find the disk by typing ```lsblk``` look for the drive with the same amount of storage, it is usually ```/dev/sda```
-3. Partition the drive 
+3. Partition the drive ```cfdisk /dev/sdaX```
+4. [Click Here](https://www.geeksforgeeks.org/cfdisk-command-in-linux-with-examples/) for instructions on how to use CFDisk.
+5. Save your change in CFDisk and exit
+6. Create the file system on the drive ```mkfs.ext4 /dev/sdaX``` 
 
 ## The WiFi Dongle
 I had a spare Ralink (MediaTek) MT7601 WiFi dongle laying around [Click Here](https://a.co/d/cBMD0uD) for a 2 pack (these are the antenna-less version but any Ralink dongle should work) and all in order for it to work I needed to first identify the chipset and install the kernel mod so that it is supported.
@@ -65,4 +68,4 @@ There is the possibility of bricking your router if you use a firmware for a dif
 2. Netmask: 255.255.255.0
 3. Gateway: 192.168.1.1
 
-Now open a browser and navigate to http://192.168.1.1
+Once all of that is in place hold down the side button on the router and plug the power into the router. Wait for the red LED to blink 5 times. Wait 1 second after the 5th blink and release the button. Now open a browser and navigate to http://192.168.1.1 you should see a UBoot Firmware update page. Move the switch on the side of the router to the right position then select "Enable switch" and press accept then select your firmware and start the restore.
