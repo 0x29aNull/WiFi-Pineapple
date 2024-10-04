@@ -55,6 +55,15 @@ Depending on your OS you may be able to navigate to the WiFi Pineapple managemen
 9. Router/Gateway: 172.16.42.1
 
 ### Linux
+Since there are many different Linux variants which have many different ways of configuring your network interfaces I will post instructions for my
+favorite distribution, [Void Linux](https://www.voidlinux.org). Please lookup instructions for your Linux distro.
+
+1. get the interface name ```ip link show``` (we will use the interface name "wlan0" for these instructions)
+2. type the following commands..
+3. ```sudo ip addr add 172.16.42.69/24 dev wlan0```
+4. ```sudo ip link set wlan0 up```
+5. ```sudo ip route add default via 172.16.42.1```
+6. Verify the settings with ```ip addr show && ip route show```
 
 The page will ask you to hold the side button for 2 or more seconds to enable management via WiFi. At this point I would suggest that you get a usb hub, a minimum 16gb USB drive and an additional USB WiFi Dongle and plug both the drive and the WiFi Dongle in to the hub and the hub into the USB port on the side of the router. 
 
