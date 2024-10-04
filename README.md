@@ -84,6 +84,9 @@ I had a spare Ralink (MediaTek) MT7601 WiFi dongle laying around [Click Here](ht
 ```opkg install kmod-mt7601u```
 
 
+## The USB Hub
+Since the router only has 1 USB port you will need a 2 port hub for the WiFi dongle and USB Drive. I found a cheap $5 four port hub at a five below store. I used a hand saw to cut the additional 2 ports off and it still worked just fine after, This may or may not be the case for whatever hub you choose.
+
 ## The bricked router
 There is the possibility of bricking your router if you use a firmware for a different device or a firmware that is corrupted/incomplete. There is a fix for this! First, [Click Here](https://dl.gl-inet.com/router/ar300m/) to download the latest firmware for your device. Unplug your router from power and plug an ethernet cable in to either port on the router and plug the other end of the ethernet cable in to your PC (Make sure there are no other ethernet cables plugged in to the router). Following the directions above on setting your network interface settings to access the WiFi Pineapple this time we want to select the ethernet port instead of the WiFi and set the IPv4 settings to the following..
 
