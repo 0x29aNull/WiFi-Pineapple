@@ -1,6 +1,8 @@
 # DIY WiFi-Pineapple
 Homemade WiFi Pineapple for under $50
 
+![AR300M](https://raw.githubusercontent.com/0x29aNull/WiFi-Pineapple/refs/heads/main/GLINETAR300.jpg)
+
 Since Hak5 came out with their WiFi Pineapple I've always wanted one but never really wanted to pay the price. I am however a DIY'er and when I learned that you can create one that could fit in the palm of your hand I knew I had to make one.
 
 ## The router
